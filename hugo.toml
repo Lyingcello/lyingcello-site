@@ -1,11 +1,10 @@
-baseURL = 'https://lyingcello.github.io/lyingcello-site/'
+baseURL = 'https://lyingcello.com/'
 languageCode = 'zh-tw'
 title = 'Lyingcello'
 theme = "PaperMod"
 
 [params]
   homeInfoParams = {Title = "Lyingcello", Content = "Comic_and_Blog"}
-  mainSections = ["blog"]
 
 [[menu.main]]
   identifier = "comics"
