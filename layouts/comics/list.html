@@ -1,13 +1,13 @@
 {{ define "main" }}
+{{ $r2 := "https://pub-9d3b2dc3758a443f8c69b8bd410843c8.r2.dev" }}
 <div class="comics-list">
   <h1>{{ .Title }}</h1>
   <div class="comics-grid">
     {{ range .Pages }}
+    {{ $chapter := .File.Dir | path.Clean | path.Base }}
     <a href="{{ .Permalink }}" class="chapter-card">
-      {{ with .Resources.GetMatch "cover.png" }}
-      <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="chapter-cover">
-      {{ end }}
-      <h2>{{ .Title }}</h2>
+      <img src="{{ $r2 }}/{{ $chapter }}/cover.png" alt="{{ .Title }}" class="chapter-cover">
+      <h2 class="chapter-title">{{ .Title }}</h2>
     </a>
     {{ end }}
   </div>
