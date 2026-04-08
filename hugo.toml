@@ -1,0 +1,19 @@
+baseURL = 'https://lyingcello.com/'
+languageCode = 'zh-tw'
+title = 'Lyingcello'
+theme = "PaperMod"
+
+[params]
+  homeInfoParams = {Title = "Lyingcello", Content = "Comic_and_Blog"}
+
+[[menu.main]]
+  identifier = "comics"
+  name = "Comics"
+  url = "/comics/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 2

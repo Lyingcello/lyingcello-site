@@ -1,0 +1,64 @@
+.comic-chapter h1 {
+  margin-bottom: 2rem;
+}
+
+.comic-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.comic-page {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.comics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.chapter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.5rem;
+}
+
+.chapter-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.chapter-title {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.chapter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.chapter-nav-btn {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.chapter-nav-btn:hover {
+  background: var(--code-bg);
+}

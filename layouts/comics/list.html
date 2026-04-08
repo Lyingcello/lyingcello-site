@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="comics-list">
+  <h1>{{ .Title }}</h1>
+  <div class="comics-grid">
+    {{ range .Pages }}
+    <a href="{{ .Permalink }}" class="chapter-card">
+      {{ with .Resources.GetMatch "cover.png" }}
+      <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="chapter-cover">
+      {{ end }}
+      <h2>{{ .Title }}</h2>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
