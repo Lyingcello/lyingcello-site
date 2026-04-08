@@ -5,6 +5,7 @@ theme = "PaperMod"
 
 [params]
   homeInfoParams = {Title = "Lyingcello", Content = "Comic_and_Blog"}
+  mainSections = ["blog"]
 
 [[menu.main]]
   identifier = "comics"
