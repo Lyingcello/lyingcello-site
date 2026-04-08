@@ -1,11 +1,11 @@
 {{ define "main" }}
+{{ $r2 := "https://pub-9d3b2dc3758a443f8c69b8bd410843c8.r2.dev" }}
+{{ $chapter := .File.Dir | path.Clean | path.Base }}
 <article class="comic-chapter">
   <h1>{{ .Title }}</h1>
   <div class="comic-pages">
-    {{ range .Resources.ByType "image" }}
-    {{ if ne .Name "cover.png" }}
-    <img src="{{ .RelPermalink }}" alt="{{ .Name }}" class="comic-page">
-    {{ end }}
+    {{ range .Params.pages }}
+    <img src="{{ $r2 }}/{{ $chapter }}/{{ . }}" alt="{{ . }}" class="comic-page">
     {{ end }}
   </div>
   <nav class="chapter-nav">
