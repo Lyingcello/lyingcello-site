@@ -1,4 +1,4 @@
-baseURL = 'https://lyingcello.com/'
+baseURL = 'https://lyingcello.github.io/lyingcello-site/'
 languageCode = 'zh-tw'
 title = 'Lyingcello'
 theme = "PaperMod"
