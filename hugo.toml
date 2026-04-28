@@ -6,6 +6,10 @@ theme = "PaperMod"
 [params]
   homeInfoParams = {Title = "Lyingcello", Content = "Comic_and_Blog"}
 
+[params.assets]
+  favicon = "/favicon.png"
+
+  
 [[menu.main]]
   identifier = "comics"
   name = "Comics"
