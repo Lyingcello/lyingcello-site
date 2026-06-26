@@ -5,6 +5,11 @@ theme = "PaperMod"
 
 [params]
   homeInfoParams = {Title = "Lyingcello", Content = "Comic_and_Blog"}
+  profileMode.enabled = true
+  profileMode.title = "Lyingcello"
+  profileMode.subtitle = "嗨，我是Lyingcello，也可以叫我謝羅爾，我會在這裡放一些自己的創作和日記 \n Email:lyingcello@gmail.com"
+  profileMode.imageUrl = "https://pub-108eb03728a34ba89f4cd7c1f60fdf76.r2.dev/photo/260626_intro.png"
+  profileMode.imageTitle = "avatar"
 
 [params.assets]
   favicon = "/favicon.png"
